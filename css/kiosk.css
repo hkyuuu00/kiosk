@@ -1,0 +1,141 @@
+@font-face {
+    font-family: 'ChungjuKimSaengTTF';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2312-1@1.1/ChungjuKimSaengTTF.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'DAEAM_LEE_TAE_JOON';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2312-1@1.1/DAEAM_LEE_TAE_JOON.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+    font-family: 'ChungjuKimSaengTTF';
+    background-color: white;
+}
+
+
+#title {
+    font-family: 'DAEAM_LEE_TAE_JOON';
+    font-size: 40px;
+}
+
+
+/*메뉴 바*/
+#menuBar {
+    text-align:center;
+    background-color: black;
+    height: 50px;
+}
+#menuBar ul {
+    display:inline-block;
+}
+#menuBar ul li {
+    list-style-type: none;
+    float:left; 
+    padding:0 30px; 
+    line-height:1px;
+}
+#menuBar ul li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    padding: 25px; 
+    position: relative;
+    bottom: 16px;
+}
+#menuBar li a:hover,
+#menuBar li a:focus {
+    background: #FFFFFF;
+    color: black;
+}
+
+/*order부분*/
+#bill {
+    position: sticky;
+    right: 60px;
+    bottom: 35px;
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 400px;
+    height: 500px;
+    float: right;
+    text-align: right;
+}
+#bill table {
+    width: 350px;
+}
+#bill #cancel {
+    font-family: 'ChungjuKimSaengTTF';
+    width: 150px;
+    height: 50px;
+    margin-right: 15px;
+    margin-top: 30px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+#bill #payment {
+    font-family: 'ChungjuKimSaengTTF';
+    width: 150px;
+    height: 50px;
+    margin-left: 15px;
+    margin-top: 30px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+#bill input[type="submit"]:hover,
+#bill input[type="submit"]:active {
+    background-color: darkgray;
+    position: relative;
+    top: 1px; left: 1px;
+}
+#bill input[type="button"]:active,
+#bill input[type="button"]:hover {
+    background-color: darkgray;
+    position: relative;
+    top: 1px; left: 1px;
+}
+#orderMenu {
+    height: 280px;
+    overflow: auto;
+}
+#order1 {
+    float: left; padding: 20px;
+}
+#order2 {
+    float: right; padding: 20px;
+}
+#result {
+    position: relative;
+    right: 15px;
+    font-size: 20px;
+}
+
+/*메뉴부분*/
+#Menu {
+    display: inline-block;
+    border-spacing: 30px 30px;
+}
+#Menu tr td {
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+#Menu tr :hover,
+#Menu tr :focus {
+    position: relative;
+    top: 1px; left: 1px;
+    background-color: darkslategrey;
+}
+#Menu tr td :hover,
+#Menu tr td :focus {
+    position:static;
+}
+img {
+    width: 210px;
+    height: 210px;
+}

@@ -1,0 +1,60 @@
+@font-face {
+    font-family: 'ChungjuKimSaengTTF';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2312-1@1.1/ChungjuKimSaengTTF.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'DAEAM_LEE_TAE_JOON';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2312-1@1.1/DAEAM_LEE_TAE_JOON.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+    background-color: black;
+}
+a {
+    text-decoration: none;
+}
+p {
+    color: white;
+    text-shadow: 2px 1px #3399CC;
+    text-align: center;
+}
+#name {
+    font-family: 'DAEAM_LEE_TAE_JOON';
+    font-size: 70px;
+    position: relative;
+    bottom: 700px;
+}
+#touch {
+    font-family: 'ChungjuKimSaengTTF';
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    position: relative;
+    bottom: 320px;
+}
+#arrow {
+    font-family: 'ChungjuKimSaengTTF';
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    position: relative;
+    bottom: 330px;
+}
+.bg-video {
+position: absolute;
+top: 0;
+left: 0;
+height: 100%;
+width: 100%;
+z-index: -1;
+
+}
+
+.bg-video__content {
+height: 99.5%;
+width: 100%;
+object-fit: cover;
+}
