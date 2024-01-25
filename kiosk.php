@@ -317,10 +317,6 @@
                     orderItem(itemName, price);
                 });
             });
-            // 페이지가 로드될 때 주문 내역을 표시
-            window.onload = function() {
-                displayOrder();
-            };
 
             document.getElementById('payment').addEventListener('click', function(e) {
                 e.preventDefault();  // 폼의 자동 제출을 막음
@@ -367,6 +363,10 @@
             window.onclick = resetTimer;      // 클릭 이벤트
             window.onscroll = resetTimer;     // 스크롤 이벤트
             window.onkeypress = resetTimer;   // 키보드 이벤트
+            // 페이지가 로드될 때 주문 내역을 표시
+            window.onload = function() {
+                displayOrder();
+            };
         </script>
     </body>
 </html>
