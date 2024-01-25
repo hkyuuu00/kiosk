@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>상품추가</title>
+    </head>
+
+    <body>
+        <form action="admin_process.php" method="post" enctype="multipart/form-data">
+            상품: <input type="text" name="menu"><br>
+            가격: <input type="text" name="price"><br>
+            종류: <select name="menuType">
+                <option value="coffie">커피</option>
+                <option value="tea">티</option>
+                <option value="latte">라떼</option>
+                <option value="smoothie">스무디/에이드</option>
+                <option value="dessert">디저트</option>
+            </select>
+            사진: <input type="file" name="m_img"><br><br>
+            <input type="submit" value="추가">
+        </form>
+    </body>
+</html>

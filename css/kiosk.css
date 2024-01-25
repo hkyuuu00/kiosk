@@ -45,6 +45,7 @@ body {
     padding: 25px; 
     position: relative;
     bottom: 16px;
+    transition: background-color 0.5s ease;
 }
 #menuBar li a:hover,
 #menuBar li a:focus {
@@ -136,6 +137,37 @@ body {
     position:static;
 }
 img {
-    width: 210px;
-    height: 210px;
+    width: 200px;
+    height: 200px;
+}
+
+
+.item-row {
+    white-space: nowrap;
+}
+
+.item-name {
+    display: inline-block;
+    width: 130px;
+    padding-left: 10px;
+    text-align: left;
+}
+
+.item-quantity {
+    display: inline-block;
+    width: 50px;
+    padding-right: 70px;
+    padding-left: 40px;
+}
+
+.item-price {
+    display: inline-block;
+    width: 70px;
+    padding-right: 10px;
+}
+.quantity-button {
+    margin: 0 5px;
+    border: none;
+    background-color: transparent;
+    font-size: 1em;
 }
