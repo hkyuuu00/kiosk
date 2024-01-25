@@ -103,7 +103,7 @@
                         . '<td>' . $itemData['quantity'] . '</td>'
                         . '<td>' . $itemData['price'] . '원</td>';
                         echo '</tr>';
-                        $total += $itemData['price'];
+                       $total += $itemData['price'] * $itemData['quantity'];
                     }
                     ?>
                     </table>
@@ -146,6 +146,8 @@
                                     }).then(() => {
                                         location.href = 'start.html';  // start.html로 이동
                                     });
+                                }else{
+                                    location.href = 'start.html';  // start.html로 이동
                                 }
                             });
                         });
