@@ -123,7 +123,7 @@
                 }).then((result) => {
                     if (result.isConfirmed) {
                         Swal.fire({
-                            position: "middle-middle",
+                            position: "center",
                             icon: "success",
                             title: "결제가 완료되었습니다.",
                             showConfirmButton: false,
