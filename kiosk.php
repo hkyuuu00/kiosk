@@ -14,7 +14,7 @@
             <nav id="menuBar">
                 <ul>
                     <li><a href="?section=0">ALL</a></li>
-                    <li><a href="?section=1">COFFIE</a></li>
+                    <li><a href="?section=1">COFFEE</a></li>
                     <li><a href="?section=2">TEA</a></li>
                     <li><a href="?section=3">LATTE</a></li>
                     <li><a href="?section=4">ADE</a></li>
@@ -30,7 +30,7 @@
 
                 $section = $_GET['section'];
                 if ($section == '1') {
-                    $query = "select * from cafe where menuType = 'coffie'";
+                    $query = "select * from cafe where menuType = 'coffee'";
                     $result = mysqli_query($dbcon, $query);
                     $count = 0;
                 
@@ -41,7 +41,7 @@
                         echo '<td>';
                         echo '<img src='.$row[4].'><br>';
                         echo '<span id="m1">'.$row[1].'</span><br>';
-                        echo '<span id="p1">'.$row[2].'</span><br>';
+                        echo '<span id="p1">'.$row[2].'원</span><br>';
                         echo '</td>';
                                             
                         if($count % 4 == 3) {
@@ -64,7 +64,7 @@
                         echo '<td>';
                         echo '<img src='.$row[4].'><br>';
                         echo '<span id="m1">'.$row[1].'</span><br>';
-                        echo '<span id="p1">'.$row[2].'</span><br>';
+                        echo '<span id="p1">'.$row[2].'원</span><br>';
                         echo '</td>';
                                             
                         if($count % 4 == 3) {
@@ -87,7 +87,7 @@
                         echo '<td>';
                         echo '<img src='.$row[4].'><br>';
                         echo '<span id="m1">'.$row[1].'</span><br>';
-                        echo '<span id="p1">'.$row[2].'</span><br>';
+                        echo '<span id="p1">'.$row[2].'원</span><br>';
                         echo '</td>';
                                             
                         if($count % 4 == 3) {
@@ -110,7 +110,7 @@
                         echo '<td>';
                         echo '<img src='.$row[4].'><br>';
                         echo '<span id="m1">'.$row[1].'</span><br>';
-                        echo '<span id="p1">'.$row[2].'</span><br>';
+                        echo '<span id="p1">'.$row[2].'원</span><br>';
                         echo '</td>';
                                             
                         if($count % 4 == 3) {
@@ -133,7 +133,7 @@
                         echo '<td>';
                         echo '<img src='.$row[4].'><br>';
                         echo '<span id="m1">'.$row[1].'</span><br>';
-                        echo '<span id="p1">'.$row[2].'</span><br>';
+                        echo '<span id="p1">'.$row[2].'원</span><br>';
                         echo '</td>';
                                             
                         if($count % 4 == 3) {
@@ -148,7 +148,7 @@
                     $query = "select * from cafe order by menuType, num";
                     $result = mysqli_query($dbcon, $query);
                     $count = 0;
-                
+                    
                     while($row = mysqli_fetch_row($result)) {
                         if($count % 4 == 0) {
                             echo '<tr class="product">';
@@ -156,7 +156,7 @@
                         echo '<td>';
                         echo '<img src='.$row[4].'><br>';
                         echo '<span id="m1">'.$row[1].'</span><br>';
-                        echo '<span id="p1">'.$row[2].'</span><br>';
+                        echo '<span id="p1">'.$row[2].'원</span><br>';
                         echo '</td>';
                                             
                         if($count % 4 == 3) {
