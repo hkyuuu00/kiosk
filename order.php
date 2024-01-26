@@ -6,8 +6,6 @@
     </head>
 
     <body>
-        <?php
-            주문내역
-        ?>
+        주문내역
     </body>
 </html>
