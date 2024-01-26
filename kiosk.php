@@ -348,9 +348,9 @@
                     clearTimeout(timeoutId);  // 이전 타이머를 취소
                 }
 
-                // 90초 후에 start.html로 이동하는 타이머를 설정
+                // 90초 후에 index.html로 이동하는 타이머를 설정
                 timeoutId = setTimeout(function() {
-                    location.href = 'start.html';
+                    location.href = 'index.html';
                 }, 90 * 1000);
             }
 

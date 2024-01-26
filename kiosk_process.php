@@ -79,7 +79,7 @@
             <center>
                 <h1 id = 'title'>Urban Oasis</h1><br>
                 <h2>결제</h2><br>
-                <a href = "./start.html"><input type = "button" value="처음으로" id="backpage"></a><br>
+                <a href = "./index.html"><input type = "button" value="처음으로" id="backpage"></a><br>
                 <div id="pay"><br>
                     <table>
                         <tr>
@@ -144,10 +144,10 @@
                                         text: "주문해주셔서 감사합니다!",
                                         icon: "success"
                                     }).then(() => {
-                                        location.href = 'start.html';  // start.html로 이동
+                                        location.href = 'index.html';  
                                     });
                                 }else{
-                                    location.href = 'start.html';  // start.html로 이동
+                                    location.href = 'index.html';  
                                 }
                             });
                         });

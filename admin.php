@@ -52,7 +52,7 @@
                 <li><a href="./add.html">메뉴추가</a></li>
                 <li><a href="./del.html">메뉴삭제</a></li>
                 <li><a href="./order.php">주문내역</a></li>
-                <li><a href="./start.html">키오스크</a></li>
+                <li><a href="./index.html">키오스크</a></li>
             </ul>
         </center>
     </body>
