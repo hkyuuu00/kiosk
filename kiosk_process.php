@@ -101,7 +101,7 @@
                         echo '<tr>';
                         echo '<td>' . $itemName . '</td>'
                         . '<td>' . $itemData['quantity'] . '</td>'
-                        . '<td>' . $itemData['price'] . '원</td>';
+                        . '<td>' . $itemData['quantity'] * $itemData['price'] . '원</td>';
                         echo '</tr>';
                        $total += $itemData['price'] * $itemData['quantity'];
                     }
