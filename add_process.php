@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>상품추가</title>
+        <title>메뉴 추가</title>
     </head>
 
     <body>
@@ -21,7 +21,8 @@
             $check = mysqli_query($dbcon, $query);
             mysqli_close($dbcon);
             // 데이터베이스 연결 종료
-                
+            echo "<center>추가되었습니다.</center>";
+            echo "<meta http-equiv='refresh' content='1; url=./add.html'>";
         ?>
     </body>
 </html>
