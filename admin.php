@@ -46,14 +46,26 @@
     </head>
 
     <body>
+        <?php
+        session_start();
+        if(isset($_SESSION['admin'])){      //유저아이디에 세션가 있는지 조사
+            $adminID = $_SESSION['admin'];
+            ?>
         <center>
             <h1>관리자 사이트</h1><br><br>
             <ul>
                 <li><a href="./add.html">메뉴추가</a></li>
                 <li><a href="./del.html">메뉴삭제</a></li>
                 <li><a href="./order.php">주문내역</a></li>
-                <li><a href="./index.html">키오스크</a></li>
+                <li><a href="./changeID.php">계정변경</a></li>
+                <li><a href="./logout.php">종료하기</a></li>
             </ul>
         </center>
+        <?php
+        }else{
+            echo"<center><h1>Access Denied</h1></center>";
+        }
+
+        ?>
     </body>
 </html>

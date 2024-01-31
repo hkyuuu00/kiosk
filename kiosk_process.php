@@ -103,7 +103,15 @@
                         . '<td>' . $itemData['quantity'] . '</td>'
                         . '<td>' . $itemData['quantity'] * $itemData['price'] . '원</td>';
                         echo '</tr>';
-                       $total += $itemData['price'] * $itemData['quantity'];
+                        $total += $itemData['price'] * $itemData['quantity'];
+
+                        
+                        $dbcon = mysqli_connect('localhost', 'root', '');
+                        mysqli_select_db($dbcon, 'ktest');
+                        $query = "insert into MenuOrder (menu, quantity, time) values ('{$itemName}', '{$itemData['quantity']}', NOW())";
+                        $result = mysqli_query($dbcon, $query);
+                        mysqli_close($dbcon);
+                        
                     }
                     ?>
                     </table>
