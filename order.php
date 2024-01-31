@@ -13,7 +13,9 @@
 
     <body>
         <center>
+        <a href="./admin.php"><input type="button" value="뒤로가기" style="float: left;"></a><br>
             <h1>주문내역</h1><br><br>
+            
         <?php
         session_start();
         if(isset($_SESSION['admin'])){      //유저아이디에 세션가 있는지 조사
